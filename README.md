@@ -136,8 +136,9 @@ SmartExpenseAnalyzer/
 ```
 (Add screenshots here)
 ```
--->
+
 ---
+-->
 
 ## 👨‍💻 Author
 
