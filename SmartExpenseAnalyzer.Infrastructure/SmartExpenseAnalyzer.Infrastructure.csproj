@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\SmartExpenseAnalyzer.Core\SmartExpenseAnalyzer.Core.csproj" />
+    <ProjectReference Include="..\SmartExpenseAnalyzer.Shared\SmartExpenseAnalyzer.Shared.csproj" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+</Project>

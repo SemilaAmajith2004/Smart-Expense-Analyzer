@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="SmartExpenseAnalyzer.Core/SmartExpenseAnalyzer.Core.csproj" />
+  <Project Path="SmartExpenseAnalyzer.Infrastructure/SmartExpenseAnalyzer.Infrastructure.csproj" />
+  <Project Path="SmartExpenseAnalyzer.Shared/SmartExpenseAnalyzer.Shared.csproj" />
+  <Project Path="SmartExpenseAnalyzer.Tests/SmartExpenseAnalyzer.Tests.csproj" />
+  <Project Path="SmartExpenseAnalyzer.UI/SmartExpenseAnalyzer.UI.csproj" />
+</Solution>

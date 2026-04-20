@@ -1,0 +1,12 @@
+c:\Users\semil\OneDrive\Documents\GitHub\Smart-Expense-Analyzer\SmartExpenseAnalyzer.Shared\bin\Debug\net8.0\SmartExpenseAnalyzer.Shared.deps.json
+c:\Users\semil\OneDrive\Documents\GitHub\Smart-Expense-Analyzer\SmartExpenseAnalyzer.Shared\bin\Debug\net8.0\SmartExpenseAnalyzer.Shared.dll
+c:\Users\semil\OneDrive\Documents\GitHub\Smart-Expense-Analyzer\SmartExpenseAnalyzer.Shared\bin\Debug\net8.0\SmartExpenseAnalyzer.Shared.pdb
+c:\Users\semil\OneDrive\Documents\GitHub\Smart-Expense-Analyzer\SmartExpenseAnalyzer.Shared\obj\Debug\net8.0\SmartExpenseAnalyzer.Shared.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\semil\OneDrive\Documents\GitHub\Smart-Expense-Analyzer\SmartExpenseAnalyzer.Shared\obj\Debug\net8.0\SmartExpenseAnalyzer.Shared.AssemblyInfoInputs.cache
+c:\Users\semil\OneDrive\Documents\GitHub\Smart-Expense-Analyzer\SmartExpenseAnalyzer.Shared\obj\Debug\net8.0\SmartExpenseAnalyzer.Shared.AssemblyInfo.cs
+c:\Users\semil\OneDrive\Documents\GitHub\Smart-Expense-Analyzer\SmartExpenseAnalyzer.Shared\obj\Debug\net8.0\SmartExpenseAnalyzer.Shared.csproj.CoreCompileInputs.cache
+c:\Users\semil\OneDrive\Documents\GitHub\Smart-Expense-Analyzer\SmartExpenseAnalyzer.Shared\obj\Debug\net8.0\SmartExpenseAnalyzer.Shared.sourcelink.json
+c:\Users\semil\OneDrive\Documents\GitHub\Smart-Expense-Analyzer\SmartExpenseAnalyzer.Shared\obj\Debug\net8.0\SmartExpenseAnalyzer.Shared.dll
+c:\Users\semil\OneDrive\Documents\GitHub\Smart-Expense-Analyzer\SmartExpenseAnalyzer.Shared\obj\Debug\net8.0\refint\SmartExpenseAnalyzer.Shared.dll
+c:\Users\semil\OneDrive\Documents\GitHub\Smart-Expense-Analyzer\SmartExpenseAnalyzer.Shared\obj\Debug\net8.0\SmartExpenseAnalyzer.Shared.pdb
+c:\Users\semil\OneDrive\Documents\GitHub\Smart-Expense-Analyzer\SmartExpenseAnalyzer.Shared\obj\Debug\net8.0\ref\SmartExpenseAnalyzer.Shared.dll

@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\SmartExpenseAnalyzer.Core\SmartExpenseAnalyzer.Core.csproj" />
+    <ProjectReference Include="..\SmartExpenseAnalyzer.Infrastructure\SmartExpenseAnalyzer.Infrastructure.csproj" />
+    <ProjectReference Include="..\SmartExpenseAnalyzer.Shared\SmartExpenseAnalyzer.Shared.csproj" />
+  </ItemGroup>
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>disable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,16 @@
+c:\Users\semil\OneDrive\Documents\GitHub\Smart-Expense-Analyzer\SmartExpenseAnalyzer.Core\obj\Debug\net8.0\SmartExpenseAnalyzer.Core.csproj.AssemblyReference.cache
+c:\Users\semil\OneDrive\Documents\GitHub\Smart-Expense-Analyzer\SmartExpenseAnalyzer.Core\obj\Debug\net8.0\SmartExpenseAnalyzer.Core.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\semil\OneDrive\Documents\GitHub\Smart-Expense-Analyzer\SmartExpenseAnalyzer.Core\obj\Debug\net8.0\SmartExpenseAnalyzer.Core.AssemblyInfoInputs.cache
+c:\Users\semil\OneDrive\Documents\GitHub\Smart-Expense-Analyzer\SmartExpenseAnalyzer.Core\obj\Debug\net8.0\SmartExpenseAnalyzer.Core.AssemblyInfo.cs
+c:\Users\semil\OneDrive\Documents\GitHub\Smart-Expense-Analyzer\SmartExpenseAnalyzer.Core\obj\Debug\net8.0\SmartExpenseAnalyzer.Core.csproj.CoreCompileInputs.cache
+c:\Users\semil\OneDrive\Documents\GitHub\Smart-Expense-Analyzer\SmartExpenseAnalyzer.Core\obj\Debug\net8.0\SmartExpenseAnalyzer.Core.sourcelink.json
+c:\Users\semil\OneDrive\Documents\GitHub\Smart-Expense-Analyzer\SmartExpenseAnalyzer.Core\bin\Debug\net8.0\SmartExpenseAnalyzer.Core.deps.json
+c:\Users\semil\OneDrive\Documents\GitHub\Smart-Expense-Analyzer\SmartExpenseAnalyzer.Core\bin\Debug\net8.0\SmartExpenseAnalyzer.Core.dll
+c:\Users\semil\OneDrive\Documents\GitHub\Smart-Expense-Analyzer\SmartExpenseAnalyzer.Core\bin\Debug\net8.0\SmartExpenseAnalyzer.Core.pdb
+c:\Users\semil\OneDrive\Documents\GitHub\Smart-Expense-Analyzer\SmartExpenseAnalyzer.Core\bin\Debug\net8.0\SmartExpenseAnalyzer.Shared.dll
+c:\Users\semil\OneDrive\Documents\GitHub\Smart-Expense-Analyzer\SmartExpenseAnalyzer.Core\bin\Debug\net8.0\SmartExpenseAnalyzer.Shared.pdb
+c:\Users\semil\OneDrive\Documents\GitHub\Smart-Expense-Analyzer\SmartExpenseAnalyzer.Core\obj\Debug\net8.0\SmartExp.169E07D2.Up2Date
+c:\Users\semil\OneDrive\Documents\GitHub\Smart-Expense-Analyzer\SmartExpenseAnalyzer.Core\obj\Debug\net8.0\SmartExpenseAnalyzer.Core.dll
+c:\Users\semil\OneDrive\Documents\GitHub\Smart-Expense-Analyzer\SmartExpenseAnalyzer.Core\obj\Debug\net8.0\refint\SmartExpenseAnalyzer.Core.dll
+c:\Users\semil\OneDrive\Documents\GitHub\Smart-Expense-Analyzer\SmartExpenseAnalyzer.Core\obj\Debug\net8.0\SmartExpenseAnalyzer.Core.pdb
+c:\Users\semil\OneDrive\Documents\GitHub\Smart-Expense-Analyzer\SmartExpenseAnalyzer.Core\obj\Debug\net8.0\ref\SmartExpenseAnalyzer.Core.dll
