@@ -1,0 +1,5 @@
+C:\Users\semil\OneDrive\Documents\GitHub\Smart-Expense-Analyzer\obj\Debug\net8.0\TestProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\semil\OneDrive\Documents\GitHub\Smart-Expense-Analyzer\obj\Debug\net8.0\TestProject.AssemblyInfoInputs.cache
+C:\Users\semil\OneDrive\Documents\GitHub\Smart-Expense-Analyzer\obj\Debug\net8.0\TestProject.AssemblyInfo.cs
+C:\Users\semil\OneDrive\Documents\GitHub\Smart-Expense-Analyzer\obj\Debug\net8.0\TestProject.csproj.CoreCompileInputs.cache
+C:\Users\semil\OneDrive\Documents\GitHub\Smart-Expense-Analyzer\obj\Debug\net8.0\TestProject.sourcelink.json

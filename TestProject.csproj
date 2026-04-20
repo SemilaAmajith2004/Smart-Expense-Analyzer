@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SmartExpenseAnalyzer.Core\SmartExpenseAnalyzer.Core.csproj" />
+    <ProjectReference Include="..\SmartExpenseAnalyzer.Infrastructure\SmartExpenseAnalyzer.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>

@@ -72,20 +72,25 @@ public class DashboardForm : Form {
     }
 
     private void BtnAdd_Click(object? sender, EventArgs e) {
-        if (decimal.TryParse(txtAmount.Text, out decimal amount)) {
-            _expenseService.AddExpense(new Expense {
-                UserId = _user.Id,
-                Title = txtTitle.Text,
-                Amount = amount,
-                Date = dtpDate.Value,
-                Category = txtCategory.Text
-            });
-            RefreshData();
-            txtTitle.Clear();
-            txtAmount.Clear();
-            txtCategory.Clear();
-        } else {
-            MessageBox.Show("Please enter a valid amount (e.g. 50.00).", "Invalid Amount", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        try {
+            if (decimal.TryParse(txtAmount.Text, System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture, out decimal amount)) {
+                _expenseService.AddExpense(new Expense {
+                    UserId = _user.Id,
+                    Title = txtTitle.Text,
+                    Amount = amount,
+                    Date = dtpDate.Value,
+                    Category = txtCategory.Text
+                });
+                RefreshData();
+                txtTitle.Clear();
+                txtAmount.Clear();
+                txtCategory.Clear();
+                MessageBox.Show("Expense added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            } else {
+                MessageBox.Show("Please enter a valid numeric amount (e.g. 50.00).", "Invalid Amount", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        } catch (Exception ex) {
+            MessageBox.Show($"An error occurred while adding the expense:\n{ex.Message}", "Application Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 
