@@ -4,7 +4,6 @@ using System.Linq;
 using System.Windows.Forms;
 using SmartExpenseAnalyzer.Core.Interfaces;
 using SmartExpenseAnalyzer.Core.Models;
-using SmartExpenseAnalyzer.UI.Controls;
 
 namespace SmartExpenseAnalyzer.UI.Forms;
 
@@ -12,9 +11,7 @@ public class DashboardForm : Form {
     private readonly User _user;
     private readonly IExpenseService _expenseService;
     
-    // UI Elements
     private DataGridView grid = new DataGridView();
-    private ChartControl pieChart = new ChartControl();
     private Label lblTotal = new Label();
     private TextBox txtTitle = new TextBox();
     private TextBox txtAmount = new TextBox();
@@ -22,7 +19,6 @@ public class DashboardForm : Form {
     private TextBox txtCategory = new TextBox();
     private Button btnAdd = new Button();
 
-    // Theming Colors
     private readonly Color bgColor = Color.FromArgb(30, 30, 36); 
     private readonly Color panelColor = Color.FromArgb(43, 43, 54);
     private readonly Color primaryColor = Color.FromArgb(0, 150, 255); 
@@ -40,12 +36,10 @@ public class DashboardForm : Form {
         this.BackColor = bgColor;
         this.FormBorderStyle = FormBorderStyle.None; 
         this.StartPosition = FormStartPosition.CenterScreen;
-        // Expanded width to accommodate the pie chart seamlessly
-        this.Size = new Size(1150, 550);
+        this.Size = new Size(800, 550); // Reverted size, moved chart to another form
         this.MouseDown += Form_MouseDown;
     }
 
-    // Borderless dragging capability
     public const int WM_NCLBUTTONDOWN = 0xA1;
     public const int HT_CAPTION = 0x2;
     [System.Runtime.InteropServices.DllImport("user32.dll")]
@@ -69,8 +63,7 @@ public class DashboardForm : Form {
         var lblHeader = new Label { Text = $"Dashboard - Welcome {_user.Username}", Font = new Font("Segoe UI", 16F, FontStyle.Bold), ForeColor = primaryColor, AutoSize = true, Location = new Point(20, 15) };
         lblHeader.MouseDown += Form_MouseDown;
         
-        // Pushed close button further right to 1110
-        var btnClose = new Label { Text = "✕", Location = new Point(1110, 15), AutoSize = true, ForeColor = Color.Gray, Font = new Font("Segoe UI", 14F, FontStyle.Bold), Cursor = Cursors.Hand };
+        var btnClose = new Label { Text = "✕", Location = new Point(760, 15), AutoSize = true, ForeColor = Color.Gray, Font = new Font("Segoe UI", 14F, FontStyle.Bold), Cursor = Cursors.Hand };
         btnClose.Click += (s, e) => this.Close();
         btnClose.MouseEnter += (s, e) => btnClose.ForeColor = Color.Crimson;
         btnClose.MouseLeave += (s, e) => btnClose.ForeColor = Color.Gray;
@@ -78,7 +71,6 @@ public class DashboardForm : Form {
         headerPanel.Controls.Add(lblHeader);
         headerPanel.Controls.Add(btnClose);
 
-        // Grid
         grid.Location = new Point(30, 80);
         grid.Size = new Size(740, 280);
         grid.ReadOnly = true;
@@ -99,13 +91,17 @@ public class DashboardForm : Form {
         grid.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
         grid.ColumnHeadersHeight = 40;
 
-        // Total
         lblTotal.Location = new Point(30, 380);
         lblTotal.AutoSize = true;
         lblTotal.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
         lblTotal.ForeColor = Color.SpringGreen;
 
-        // Input forms
+        var btnReports = new Button { Text = "View Charts & Reports", Location = new Point(530, 375), Size = new Size(240, 35) };
+        btnReports.Font = new Font("Segoe UI", 11F, FontStyle.Bold); btnReports.Cursor = Cursors.Hand;
+        btnReports.FlatStyle = FlatStyle.Flat; btnReports.FlatAppearance.BorderSize = 0;
+        btnReports.BackColor = Color.MediumOrchid; btnReports.ForeColor = Color.White;
+        btnReports.Click += (s, e) => new ReportsForm(_user, _expenseService).ShowDialog();
+
         var inputPanel = new Panel { Location = new Point(30, 420), Size = new Size(740, 100), BackColor = panelColor };
         
         var lblTitle = new Label { Text = "Title", ForeColor = Color.LightGray, Font = mainFont, Location = new Point(15, 10), AutoSize = true };
@@ -137,18 +133,11 @@ public class DashboardForm : Form {
         inputPanel.Controls.Add(lblCategory); inputPanel.Controls.Add(txtCategory);
         inputPanel.Controls.Add(btnAdd);
 
-        // Pie Chart
-        pieChart.Location = new Point(780, 80);
-        pieChart.Size = new Size(350, 440);
-        pieChart.Font = mainFont;
-        pieChart.ForeColor = textColor;
-        pieChart.BackColor = bgColor; // Ensure proper blending for the Donut Hole
-
         Controls.Add(headerPanel);
         Controls.Add(grid);
         Controls.Add(lblTotal);
+        Controls.Add(btnReports);
         Controls.Add(inputPanel);
-        Controls.Add(pieChart);
     }
 
     private void BtnAdd_Click(object? sender, EventArgs e) {
@@ -181,8 +170,5 @@ public class DashboardForm : Form {
         grid.DataSource = expenses;
         lblTotal.Text = $"Total Expenses: ${expenses.Sum(x => x.Amount):0.00}";
         grid.Columns["UserId"].Visible = false;
-        
-        // Triggers the magical Donut chart update!
-        pieChart.UpdateData(expenses);
     }
 }
