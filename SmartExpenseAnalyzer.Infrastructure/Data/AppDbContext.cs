@@ -7,11 +7,12 @@ using SmartExpenseAnalyzer.Core.Models;
 namespace SmartExpenseAnalyzer.Infrastructure.Data;
 
 public class AppDbContext {
-    private readonly string _filePath = "data.json";
+    private readonly string _filePath;
     
     public Database CurrentDb { get; set; } = new Database();
 
     public AppDbContext() {
+        _filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data.json");
         Load();
     }
 
